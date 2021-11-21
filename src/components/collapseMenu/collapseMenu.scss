@@ -1,0 +1,28 @@
+@import "../../colors/colors.scss";
+
+.collapseMenuButton {
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  color: white;
+  font-size: 0.8em !important;
+  transition: 0.3s;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  border: none !important;
+  outline: none;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  &:hover{
+    background-color: $mainColor !important;
+  }
+}

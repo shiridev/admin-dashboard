@@ -1,0 +1,48 @@
+.offcanvas {
+  width: 290px !important;
+  border: none !important;
+}
+
+.sideBarContainer {
+  position: absolute;
+  height: calc(100% - 40px);
+  width: 290px;
+  background-color: white;
+  border-radius: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: right;
+  padding-bottom: 20px;
+  direction: ltr;
+  transition: 0.3s;
+  overflow-y: overlay;
+
+  .sideBarLogoContainer {
+    overflow-y: hidden;
+    height: 70px;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+      transition: 0.3s;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.sideBarMenuContainer {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  text-align: center;
+  border-radius: 10px;
+}

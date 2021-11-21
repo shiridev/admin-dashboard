@@ -1,0 +1,31 @@
+.themeCustomSwitchContainer {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px !important;
+  border: none !important;
+  cursor: pointer;
+  padding: 0 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.themeCustomSwitchContainer .iconContainer {
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+}
+/*# sourceMappingURL=themeSwitcher.css.map */

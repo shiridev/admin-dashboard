@@ -1,0 +1,105 @@
+.dashboardTitleContainer {
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dashboardTitleContainer .collapseSidebarButton {
+  background-color: #ef3121;
+  height: 40px;
+  border-radius: 10px;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none;
+}
+
+.dashboardTitleContainer .collapseSidebarButton:hover {
+  background-color: #c02618;
+}
+
+.dashboardTitleContainer .collapseSidebarButton:focus {
+  background-color: #ef3121;
+}
+
+.dashboardTitleContainer .profile {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ef3121;
+  border-radius: 1000000px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dashboardTitleContainer .profile:hover {
+  border-color: #E63946;
+}
+
+.dashboardTitleContainer .profile:focus {
+  border-color: #E63946 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.dashboardTitleContainer .profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100000px;
+}
+
+.dashboardTitleContainer .profile::after {
+  display: none !important;
+}
+
+.dashboardTitleContainer .profileDropdownMenu {
+  border-radius: 10px;
+  text-align: right;
+  font-size: 0.8em;
+  -webkit-animation: dropdownAnimation 0.3s ease-in-out;
+          animation: dropdownAnimation 0.3s ease-in-out;
+}
+
+@-webkit-keyframes dropdownAnimation {
+  0% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes dropdownAnimation {
+  0% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.dashboardTitleContainer .profileDropdownMenu .profileDropdownMenuItem:active {
+  background-color: #ef3121 !important;
+}
+/*# sourceMappingURL=dashboardTitle.css.map */

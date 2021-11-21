@@ -1,0 +1,32 @@
+.sideBarMenuButtonContainer {
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  color: white;
+  font-size: 0.8em !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  border: none !important;
+  outline: none;
+  border-radius: 0 !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sideBarMenuButtonContainer:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.sideBarMenuButtonContainer:hover {
+  background-color: #8E8D92 !important;
+}
+/*# sourceMappingURL=sideBarMenuLink.css.map */

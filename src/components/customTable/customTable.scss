@@ -1,0 +1,29 @@
+@import "../../colors/colors.scss";
+
+table {
+  td {
+    font-size: 0.9em;
+  }
+}
+
+.detailsButton {
+  background-color: transparent;
+  height: 40px;
+  border-radius: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid $mainColor;
+  color: $mainColor;
+
+  &:hover {
+    background-color: $buttonHover;
+    background-color: $mainColor;
+    border-color: $mainColor;
+    color: white;
+  }
+
+  &:focus {
+    background-color: $mainColor;
+    border-color: $mainColor;
+  }
+}

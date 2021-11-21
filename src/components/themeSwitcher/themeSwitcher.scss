@@ -1,0 +1,24 @@
+@import "../../colors/colors.scss";
+
+.themeCustomSwitchContainer {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px !important;
+  border: none !important;
+  cursor: pointer;
+  padding: 0 !important;
+  transition: 0.3s;
+  box-shadow: none !important;
+
+  .iconContainer {
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+  }
+}
