@@ -15,7 +15,7 @@ export const ThemeSwitcher = React.forwardRef((props, ref) => {
       ref={ref}
       className={`themeCustomSwitchContainer mx-3`}
       onClick={() => dispatch(themeStateSlice.actions.changeTheme())}
-      style={{ backgroundColor: theme.lightTheme ? "#ff9e00" : "#272727" }}
+      style={{ backgroundColor: theme.titleButtonSwitcherBackground }}
     >
       <div className="iconContainer">{theme.lightTheme ? <BsFillSunFill color="#ff9e00" /> : <BsFillMoonFill color="#272727" />}</div>
     </Button>

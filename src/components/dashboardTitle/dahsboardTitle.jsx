@@ -12,6 +12,7 @@ import { ThemeSwitcher } from "../themeSwitcher/themeSwitcher";
 import { LanguageSwitcher } from "../languageSwitcher/languageSwitcher";
 
 class DahsboardTitle extends Component {
+  
   render() {
     const sidebarCollapse = this.props.sidebar.sidebarCollapse;
     const defaultLanguage = this.props.language.defaultLanguage;

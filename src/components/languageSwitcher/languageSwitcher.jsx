@@ -17,10 +17,10 @@ export const LanguageSwitcher = React.forwardRef((props, ref) => {
       ref={ref}
       className="languageCustomSwitchContainer"
       onClick={() => dispatch(languageStateSlice.actions.changeLanguage())}
-      style={{ backgroundColor: theme.lightTheme ? "#ff9e00" : "#272727" }}
+      style={{ backgroundColor: theme.theme.titleButtonSwitcherBackground }}
     >
       <div className="languageIconContainer">
-        {language.persian ? <img src={iranFlag} height={20} alt='iran flag' /> : <img src={usaFlage} height={20} alt='usa flag' />}
+        {language.persian ? <img src={iranFlag} height={20} alt="iran flag" /> : <img src={usaFlage} height={20} alt="usa flag" />}
       </div>
     </Button>
   );

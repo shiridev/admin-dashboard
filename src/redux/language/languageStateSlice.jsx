@@ -5,7 +5,7 @@ const languageStateSlice = createSlice({
   name: "language",
   initialState: {
     defaultLanguage: languages.english,
-    dir: languages.persian.direction,
+    dir: languages.english.direction,
   },
 
   reducers: {
