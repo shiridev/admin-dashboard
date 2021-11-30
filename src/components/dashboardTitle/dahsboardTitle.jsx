@@ -2,17 +2,16 @@ import "./dashboardTitle.css";
 import "../../styles.css";
 import { Button, Dropdown } from "react-bootstrap";
 import { BsFillPersonFill } from "react-icons/bs";
-import { AiOutlineMenu } from "react-icons/ai";
-import { IoExit } from "react-icons/io5";
+import { AiFillHome, AiFillSetting, AiOutlineMenu } from "react-icons/ai";
 import profile from "../../images/profile.jpg";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { sidebarStateSlice } from "../../redux/sidebar/sidebarStateSlice";
 import { ThemeSwitcher } from "../themeSwitcher/themeSwitcher";
 import { LanguageSwitcher } from "../languageSwitcher/languageSwitcher";
+import { CustomButton } from "../customButton/customButton";
 
 class DahsboardTitle extends Component {
-  
   render() {
     const sidebarCollapse = this.props.sidebar.sidebarCollapse;
     const defaultLanguage = this.props.language.defaultLanguage;
@@ -35,14 +34,22 @@ class DahsboardTitle extends Component {
             <img src={profile} alt="avatar" />
           </Dropdown.Toggle>
           <Dropdown.Menu className="profileDropdownMenu shadow">
-            <Dropdown.Item disabled className="profileDropdownMenuItem d-flex align-items-center" href="#">
+            <Dropdown.Item disabled className="profileDropdownMenuItm[em d-flex align-items-center" href="#">
               <BsFillPersonFill size="1.5em" className={`${defaultLanguage.persian ? "ms-2" : "me-2"}`} />
-              <span>{defaultLanguage.firstName + " " + defaultLanguage.lastName}</span>
+              <span>{defaultLanguage.firstName + " - " + defaultLanguage.lastName}</span>
             </Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item className="profileDropdownMenuItem d-flex align-items-center" href="#">
-              <IoExit size="1.5em" className={`${defaultLanguage.persian ? "ms-2" : "me-2"}`} />
-              <span>{defaultLanguage.signout}</span>
+              <AiFillHome size="1.5em" className={`${defaultLanguage.persian ? "ms-2" : "me-2"}`} />
+              <span>{defaultLanguage.Home}</span>
+            </Dropdown.Item>
+            <Dropdown.Item className="profileDropdownMenuItem d-flex align-items-center" href="#">
+              <AiFillSetting size="1.5em" className={`${defaultLanguage.persian ? "ms-2" : "me-2"}`} />
+              <span>{defaultLanguage.settings}</span>
+            </Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Item className="profileDropdownMenuItem d-flex align-items-center" href="#">
+              <CustomButton style={{ width: "100%" }}>{defaultLanguage.signout}</CustomButton>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

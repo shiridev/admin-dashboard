@@ -5,10 +5,10 @@
 
 .sideBarContainer {
   position: absolute;
-  height: calc(100% - 40px);
+  height: calc(100% - 20px);
   width: 290px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 8px;
   padding-right: 20px;
   padding-left: 20px;
   float: right;
@@ -17,6 +17,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow-y: overlay;
+  z-index: 3;
 }
 
 .sideBarContainer .sideBarLogoContainer {
@@ -53,6 +54,6 @@
   overflow-y: overlay;
   overflow-x: hidden;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=sideBar.css.map */

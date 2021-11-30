@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,gBAAgB,ECHN,OAAO,CDGY,UAAU;EACvC,MAAM,EAAE,eAAe;EACvB,aAAa,EAAE,cAAc;EAC7B,UAAU,EAAE,eAAe;EAC3B,SAAS,EAAE,cAAc;CAS1B;;AAdD,AAOE,UAPQ,AAOP,MAAM,CAAC;EACN,gBAAgB,ECTN,OAAO,CDSc,UAAU;CAC1C;;AATH,AAWE,UAXQ,AAWP,MAAM,CAAC;EACN,gBAAgB,ECbN,OAAO,CDac,CAAC,CAAC,UAAU;CAC5C",
+    "sources": [
+        "customButton.scss",
+        "../../colors/colors.scss"
+    ],
+    "names": [],
+    "file": "customButton.css"
+}

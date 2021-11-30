@@ -2,6 +2,7 @@ import React from "react";
 import "./sideBar.css";
 import "../../styles.css";
 import logo from "../../images/logo.png";
+import miniLogo from "../../images/miniLogo.png";
 import CollapseMenu from "../collapseMenu/collapseMenu";
 import {
   BsCash,
@@ -33,20 +34,15 @@ export const SideBar = (props) => {
         placement={defaultLanguage.direction === "rtl" ? "end" : "start"}
         onHide={() => dispatch(sidebarStateSlice.actions.toggleCollapseSidebar(false))}
       >
-        <Offcanvas.Header style={{ height: 70, display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: themeColor.color3 }}>
-          <Offcanvas.Title
-            dir={defaultLanguage.direction}
-            style={{ paddingRight: 20, paddingLeft: 20, display: "flex", alignItems: "center", justifyContent: "center" }}
-          >
-            <img src={logo} alt="logo" style={{ objectFit: "contain", height: 30, width: 30 }} />
-            {sidebarCollapse && (
-              <h4 className={`m-0 fw-bold ${defaultLanguage.persian ? "me-3" : "ms-3"}`} style={{ color: themeColor.logoTextColor }}>
-                {defaultLanguage.logoText}
-              </h4>
-            )}
+        <Offcanvas.Header
+          className="sideBarLogoContainer"
+          style={{ height: 65, display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: themeColor.color3 }}
+        >
+          <Offcanvas.Title dir={defaultLanguage.direction}>
+            <img src={logo} alt="logo" style={{ objectFit: "contain", height: 50 }} />
           </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body style={{ backgroundColor: themeColor.color3 }}>
+        <Offcanvas.Body className="pt-0" style={{ backgroundColor: themeColor.color3 }}>
           <div className="sideBarMenuContainer">
             <CollapseMenu icon={<BsFillHandbagFill />} title={defaultLanguage.sale} screenWidth={props.screenWidth}>
               <SideBarMenuLink icon={<BsFillPlusCircleFill />} title={defaultLanguage.registerNewOrder} screenWidth={props.screenWidth} />
@@ -73,11 +69,10 @@ export const SideBar = (props) => {
           dir={defaultLanguage.direction}
           style={{ paddingRight: sidebarCollapse ? 0 : 20, paddingLeft: sidebarCollapse ? 0 : 20 }}
         >
-          <img src={logo} alt="logo" style={{ objectFit: "contain", height: 30, width: 30 }} />
-          {!sidebarCollapse && (
-            <h4 className={`m-0 fw-bold ${defaultLanguage.persian ? "me-3" : "ms-3"}`} style={{ color: themeColor.logoTextColor }}>
-              {defaultLanguage.logoText}
-            </h4>
+          {!sidebarCollapse ? (
+            <img src={logo} alt="logo" style={{ objectFit: "contain", height: 50 }} />
+          ) : (
+            <img src={miniLogo} alt="logo" style={{ objectFit: "contain", height: 50 }} />
           )}
         </div>
         <div className="sideBarMenuContainer">

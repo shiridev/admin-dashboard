@@ -1,7 +1,7 @@
 .dashboardTitleContainer {
   width: 100%;
   height: 70px;
-  border-radius: 15px;
+  border-radius: 8px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,11 +23,20 @@
 .dashboardTitleContainer .collapseSidebarButton {
   background-color: #ef3121;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 8px;
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .dashboardTitleContainer .collapseSidebarButton:hover {
@@ -101,5 +110,14 @@
 
 .dashboardTitleContainer .profileDropdownMenu .profileDropdownMenuItem:active {
   background-color: #ef3121 !important;
+}
+
+.dashboardTitleContainer .profileDropdownMenu .profileDropdownMenuItem:last-child {
+  background-color: white;
+  cursor: default;
+}
+
+.dashboardTitleContainer .profileDropdownMenu .profileDropdownMenuItem:last-child:active {
+  background-color: white !important;
 }
 /*# sourceMappingURL=dashboardTitle.css.map */

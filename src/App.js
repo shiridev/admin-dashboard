@@ -25,14 +25,14 @@ export const App = (props) => {
             <div
               className="leftContainer"
               style={{
-                width: width <= 768 ? "100%" : collapseSidebar ? "calc(100% - 75px)" : "calc(100% - 290px)",
+                width: width <= 768 ? "100%" : collapseSidebar ? "calc(100% - 65px)" : "calc(100% - 280px)",
                 paddingRight: width <= 768 ? 0 : language.direction === "rtl" ? 20 : 0,
                 paddingLeft: width <= 768 ? 0 : language.direction === "rtl" ? 0 : 20,
                 float: language.persian ? "left" : "right",
               }}
             >
               <DashboardTitle />
-              <DashboardContent />
+              <DashboardContent selectedPage={props.page} />
             </div>
           </Container>
         );

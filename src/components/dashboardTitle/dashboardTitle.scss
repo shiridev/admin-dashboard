@@ -3,7 +3,7 @@
 .dashboardTitleContainer {
   width: 100%;
   height: 70px;
-  border-radius: 15px;
+  border-radius: 8px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -17,10 +17,13 @@
   .collapseSidebarButton {
     background-color: $mainColor;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 8px;
     outline: none !important;
     box-shadow: none !important;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
       background-color: $buttonHover;
@@ -79,6 +82,15 @@
     .profileDropdownMenuItem {
       &:active {
         background-color: $mainColor !important;
+      }
+
+      &:last-child {
+        background-color: white;
+        cursor: default;
+
+        &:active {
+          background-color: white !important;
+        }
       }
     }
   }

@@ -1,13 +1,13 @@
 .dashBoardMainContainer {
   height: 100vh;
-  padding: 20px !important;
+  padding: 10px !important;
   transition-duration: 0.3s;
   transition-property: background-color;
 }
 
 .leftContainer {
   transition: 0.3s;
-  padding-right: 20px;
+  padding-right: 10px;
   height: 100%;
 }
 

@@ -1,37 +1,14 @@
 .dashboardContentContainer {
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
-  height: calc(100% - 90px);
-  border-radius: 15px;
+  height: calc(100% - 80px);
+  border-radius: 8px;
   overflow-y: overlay;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.dashboardContentContainer .dashboardCardCol:first-child .dashboradCardContainer {
-  background: #f77f00;
-  background: -webkit-gradient(linear, left top, right top, from(#f77f00), to(#ef4023));
-  background: linear-gradient(90deg, #f77f00 0%, #ef4023 100%);
-  height: 150px;
-}
-
-.dashboardContentContainer .dashboardCardCol:nth-child(2) .dashboradCardContainer {
-  background: #4cc9f0;
-  background: -webkit-gradient(linear, left top, right top, from(#4cc9f0), to(#0182c6));
-  background: linear-gradient(90deg, #4cc9f0 0%, #0182c6 100%);
-  height: 150px;
-}
-
-.dashboardContentContainer .dashboardCardCol:nth-child(3) .dashboradCardContainer {
-  background: #560bad;
-  background: -webkit-gradient(linear, left top, right top, from(#560bad), to(#3a0ca3));
-  background: linear-gradient(90deg, #560bad 0%, #3a0ca3 100%);
-  height: 150px;
-}
-
-.dashboardContentContainer .chartContainer {
-  border-radius: 10px;
-  overflow: hidden;
+  position: relative;
+  background-color: white;
+  z-index: 2;
 }
 /*# sourceMappingURL=dashboardContent.css.map */

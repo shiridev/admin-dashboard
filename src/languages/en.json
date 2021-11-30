@@ -23,5 +23,8 @@
   "lastName": "Last Name",
   "username": "Username",
   "details": "Details",
-  "signout": "Sign out"
+  "signout": "Sign out",
+  "settings": "Settings",
+  "profile": "Profile",
+  "Home": "Home"
 }

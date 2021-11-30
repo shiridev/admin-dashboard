@@ -1,7 +1,15 @@
 .dashboradCardContainer {
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   font-size: 0.9em;
   overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dashboradCardContainer:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=dashboardCard.css.map */

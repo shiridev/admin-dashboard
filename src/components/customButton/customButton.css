@@ -1,0 +1,17 @@
+.customBtn {
+  background-color: #ef3121 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  font-size: 1em !important;
+}
+
+.customBtn:hover {
+  background-color: #c02618 !important;
+}
+
+.customBtn:focus {
+  background-color: #c02618 m !important;
+}
+/*# sourceMappingURL=customButton.css.map */

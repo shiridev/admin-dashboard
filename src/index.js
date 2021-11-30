@@ -6,10 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import { AppRoutes } from "./routes/routes";
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <AppRoutes>
+      <App />
+    </AppRoutes>
   </Provider>,
   document.getElementById("root")
 );

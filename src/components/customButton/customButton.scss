@@ -1,0 +1,17 @@
+@import "../../colors/colors.scss";
+
+.customBtn {
+  background-color: $mainColor !important;
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  font-size: 1em !important;
+
+  &:hover {
+    background-color: $buttonHover !important;
+  }
+
+  &:focus {
+    background-color: $buttonHover m !important;
+  }
+}
